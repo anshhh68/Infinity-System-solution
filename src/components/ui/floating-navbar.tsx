@@ -13,7 +13,7 @@ export const FloatingNav = ({
     navItems: {
         name: string;
         link: string;
-        icon?: JSX.Element;
+        icon?: React.ReactNode;
     }[];
     className?: string;
 }) => {
@@ -41,12 +41,12 @@ export const FloatingNav = ({
                 duration: 0.3,
             }}
             className={cn(
-                "flex max-w-fit fixed top-6 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-4 py-2 items-center justify-center space-x-4",
+                "flex max-w-fit fixed top-6 inset-x-0 mx-auto border border-transparent  rounded-full  bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-4 py-2 items-center justify-center space-x-4",
                 className
             )}
         >
             {/* Brand Logo and Name */}
-            <Link href="/" className="flex items-center gap-2 group pr-4 border-r border-neutral-200 dark:border-white/[0.1]">
+            <Link href="/" className="flex items-center gap-2 group pr-4 border-r border-neutral-200 ">
                 <Image
                     src="/logo.png"
                     alt="Infinity System Solution"
@@ -54,7 +54,7 @@ export const FloatingNav = ({
                     height={28}
                     className="transition-transform group-hover:scale-110"
                 />
-                <span className="hidden lg:block text-sm font-bold text-neutral-800 dark:text-white whitespace-nowrap">
+                <span className="hidden lg:block text-sm font-bold text-neutral-800  whitespace-nowrap">
                     Infinity System Solutions
                 </span>
             </Link>
@@ -83,7 +83,7 @@ export const FloatingNav = ({
                         "relative z-10 block sm:hidden transition-colors duration-200",
                         isActive(navItem.link)
                             ? "text-primary"
-                            : "text-neutral-600 dark:text-neutral-50"
+                            : "text-neutral-600 "
                     )}>
                         {navItem.icon}
                     </span>
@@ -92,8 +92,8 @@ export const FloatingNav = ({
                     <span className={cn(
                         "relative z-10 hidden sm:block text-sm font-medium transition-colors duration-200",
                         isActive(navItem.link)
-                            ? "text-primary dark:text-primary"
-                            : "text-neutral-600 dark:text-neutral-50 hover:text-neutral-500 dark:hover:text-neutral-300"
+                            ? "text-primary "
+                            : "text-neutral-600  hover:text-neutral-500 "
                     )}>
                         {navItem.name}
                     </span>
@@ -103,7 +103,7 @@ export const FloatingNav = ({
             {/* Get a Quote button */}
             <Link
                 href="/contact"
-                className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all duration-200"
+                className="border text-sm font-medium relative border-neutral-200  text-black  px-4 py-2 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all duration-200"
             >
                 <span>Get a Quote</span>
                 <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-primary to-transparent h-px" />
@@ -111,3 +111,4 @@ export const FloatingNav = ({
         </motion.div>
     );
 };
+

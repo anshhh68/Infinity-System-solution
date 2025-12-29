@@ -40,7 +40,7 @@ export default function AboutPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="w-full flex justify-center py-12 md:py-20 bg-[#f6f6f8] dark:bg-[#101622]">
+            <section className="w-full flex justify-center py-12 md:py-20 bg-[#f6f6f8] ">
                 <div className="w-full max-w-[1280px] px-4 md:px-10">
                     <div className="flex flex-col gap-10 md:gap-16 lg:flex-row items-center">
                         {/* Left Content */}
@@ -51,10 +51,10 @@ export default function AboutPage() {
                                         About Us
                                     </span>
                                 </div>
-                                <h1 className="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-tight md:text-5xl lg:text-6xl">
+                                <h1 className="text-slate-900  text-4xl font-black leading-tight tracking-tight md:text-5xl lg:text-6xl">
                                     Bridging the Gap Between Sales & Service
                                 </h1>
-                                <p className="text-slate-500 dark:text-slate-400 text-lg font-normal leading-relaxed">
+                                <p className="text-slate-500  text-lg font-normal leading-relaxed">
                                     We are your all-in-one IT Service Provider dedicated to top-tier
                                     hardware and security services. Infinity System Solution ensures
                                     your technology empowers your business, not hinders it.
@@ -69,7 +69,7 @@ export default function AboutPage() {
                                 </Link>
                                 <Link
                                     href="/services"
-                                    className="flex h-12 min-w-[140px] cursor-pointer items-center justify-center rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-6 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 text-base font-bold transition-all"
+                                    className="flex h-12 min-w-[140px] cursor-pointer items-center justify-center rounded-lg border border-slate-300  bg-transparent px-6 text-slate-900  hover:bg-slate-100  text-base font-bold transition-all"
                                 >
                                     View Services
                                 </Link>
@@ -78,7 +78,7 @@ export default function AboutPage() {
 
                         {/* Right Image */}
                         <div className="lg:w-1/2 w-full animate-slideInRight">
-                            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-800">
+                            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-slate-200 ">
                                 <Image
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3cxRqvHUmUv1h8yx9BeNdKOKnKZXHmg-_Ygv0snB4epKV8j3mGQD3cK0TazvjM6EffAvh_YZgtkD2KMgvP4Vow2ldVsTCsRGHi3qz-1OhbdAW5fBpSH66gN83nWz3XvVHTSWIrDEdQz97PBAjVBQ1XbEJGhtFDQ2BIn_sEGH9N_sn4KtyDyUntYTnhMhFGxWof8ZizwGNCkUGUSsu8HZ2A_B0WmnHiDGZqz4Dl7POqgp2kwFHc-nzvYMcaiJsKqnS48XsiTIoS1A"
                                     alt="Professional IT technicians working on server rack infrastructure"
@@ -88,7 +88,7 @@ export default function AboutPage() {
                                 />
 
                                 {/* Overlay Card */}
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm p-6 rounded-xl border border-slate-100 dark:border-slate-700 shadow-lg">
+                                <div className="absolute bottom-6 left-6 right-6 bg-white/95  backdrop-blur-sm p-6 rounded-xl border border-slate-100  shadow-lg">
                                     <div className="flex items-center gap-4">
                                         <div className="flex -space-x-3">
                                             {[
@@ -98,7 +98,7 @@ export default function AboutPage() {
                                             ].map((src, index) => (
                                                 <div
                                                     key={index}
-                                                    className="h-10 w-10 rounded-full border-2 border-white dark:border-slate-900 bg-slate-300 relative overflow-hidden"
+                                                    className="h-10 w-10 rounded-full border-2 border-white  bg-slate-300 relative overflow-hidden"
                                                 >
                                                     <Image
                                                         src={src}
@@ -110,10 +110,10 @@ export default function AboutPage() {
                                             ))}
                                         </div>
                                         <div className="flex flex-col">
-                                            <span className="text-sm font-bold text-slate-900 dark:text-white">
+                                            <span className="text-sm font-bold text-slate-900 ">
                                                 Expert Team
                                             </span>
-                                            <span className="text-xs text-slate-500 dark:text-slate-400">
+                                            <span className="text-xs text-slate-500 ">
                                                 Certified & Ready to Help
                                             </span>
                                         </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
             </section>
 
             {/* Stats Section */}
-            <section className="w-full bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 py-10">
+            <section className="w-full bg-white  border-y border-slate-200  py-10">
                 <div className="flex justify-center">
                     <div className="w-full max-w-[1280px] px-4 md:px-10">
                         <div className="flex flex-wrap gap-8 justify-around items-center text-center">
@@ -144,11 +144,11 @@ export default function AboutPage() {
                                     <span className="text-4xl font-black text-[#135bec] tracking-tight">
                                         {stat.value}
                                     </span>
-                                    <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                                    <span className="text-sm font-medium text-slate-500 ">
                                         {stat.label}
                                     </span>
                                     {index < 3 && (
-                                        <div className="w-px h-12 bg-slate-200 dark:bg-slate-800 hidden md:block absolute right-0" />
+                                        <div className="w-px h-12 bg-slate-200  hidden md:block absolute right-0" />
                                     )}
                                 </div>
                             ))}
@@ -158,7 +158,7 @@ export default function AboutPage() {
             </section>
 
             {/* Mission Section */}
-            <section className="w-full py-16 md:py-24 bg-[#f6f6f8] dark:bg-[#101622] relative overflow-hidden">
+            <section className="w-full py-16 md:py-24 bg-[#f6f6f8]  relative overflow-hidden">
                 {/* Background Decoration */}
                 <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-[#135bec]/5 blur-3xl" />
                 <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-400/5 blur-3xl" />
@@ -168,10 +168,10 @@ export default function AboutPage() {
                         <span className="text-[#135bec] font-bold tracking-widest uppercase text-sm mb-3 block">
                             Our Mission
                         </span>
-                        <h2 className="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold leading-tight mb-6">
+                        <h2 className="text-slate-900  text-3xl md:text-4xl font-bold leading-tight mb-6">
                             Empowering Business Through Technology
                         </h2>
-                        <p className="text-slate-500 dark:text-slate-300 text-lg leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-slate-500  text-lg leading-relaxed max-w-3xl mx-auto">
                             At Infinity System Solution, we believe that robust IT infrastructure
                             is the backbone of any successful modern enterprise. Our mission is to
                             provide complete, end-to-end technology solutions that are not only
@@ -184,14 +184,14 @@ export default function AboutPage() {
             </section>
 
             {/* Features Grid */}
-            <section className="w-full py-16 md:py-24 bg-white dark:bg-slate-900">
+            <section className="w-full py-16 md:py-24 bg-white ">
                 <div className="flex justify-center">
                     <div className="w-full max-w-[1280px] px-4 md:px-10 flex flex-col items-center">
                         <div className="flex flex-col gap-4 mb-12 text-center max-w-[720px] animate-fadeIn">
-                            <h2 className="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold leading-tight">
+                            <h2 className="text-slate-900  text-3xl md:text-4xl font-bold leading-tight">
                                 Why Choose Infinity System Solution?
                             </h2>
-                            <p className="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">
+                            <p className="text-slate-500  text-base font-normal leading-normal">
                                 We stand by our core pillars of service to ensure your business
                                 technology runs smoothly and efficiently.
                             </p>
@@ -201,7 +201,7 @@ export default function AboutPage() {
                             {features.map((feature, index) => (
                                 <div
                                     key={index}
-                                    className="flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-[#f6f6f8] dark:bg-slate-800/50 p-8 hover:shadow-lg hover:border-[#135bec]/30 transition-all duration-300 group card-hover animate-fadeIn"
+                                    className="flex flex-col gap-6 rounded-2xl border border-slate-200  bg-[#f6f6f8]  p-8 hover:shadow-lg hover:border-[#135bec]/30 transition-all duration-300 group card-hover animate-fadeIn"
                                     style={{ animationDelay: `${index * 0.15}s` }}
                                 >
                                     <div className="w-14 h-14 rounded-xl bg-[#135bec]/10 flex items-center justify-center text-[#135bec] group-hover:bg-[#135bec] group-hover:text-white transition-colors duration-300">
@@ -210,10 +210,10 @@ export default function AboutPage() {
                                         </span>
                                     </div>
                                     <div className="flex flex-col gap-3">
-                                        <h3 className="text-slate-900 dark:text-white text-xl font-bold leading-tight">
+                                        <h3 className="text-slate-900  text-xl font-bold leading-tight">
                                             {feature.title}
                                         </h3>
-                                        <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed">
+                                        <p className="text-slate-500  text-base leading-relaxed">
                                             {feature.description}
                                         </p>
                                     </div>
@@ -225,16 +225,16 @@ export default function AboutPage() {
             </section>
 
             {/* Team/Values Visual Section */}
-            <section className="w-full py-16 md:py-24 bg-[#f6f6f8] dark:bg-[#101622]">
+            <section className="w-full py-16 md:py-24 bg-[#f6f6f8] ">
                 <div className="flex justify-center">
                     <div className="w-full max-w-[1280px] px-4 md:px-10">
-                        <div className="rounded-3xl overflow-hidden bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col lg:flex-row">
+                        <div className="rounded-3xl overflow-hidden bg-white  border border-slate-200  flex flex-col lg:flex-row">
                             <div className="lg:w-1/2 p-10 md:p-16 flex flex-col justify-center gap-8 animate-slideInLeft">
                                 <div>
-                                    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+                                    <h2 className="text-2xl md:text-3xl font-bold text-slate-900  mb-4">
                                         Dedicated to Excellence
                                     </h2>
-                                    <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed">
+                                    <p className="text-slate-500  text-base leading-relaxed">
                                         Our team consists of certified experts passionate about
                                         technology. From complex server migrations to simple hardware
                                         upgrades, we handle every task with the same level of
@@ -252,7 +252,7 @@ export default function AboutPage() {
                                             <span className="material-symbols-outlined text-[#135bec]">
                                                 check_circle
                                             </span>
-                                            <span className="text-slate-900 dark:text-slate-200 font-medium">
+                                            <span className="text-slate-900  font-medium">
                                                 {item}
                                             </span>
                                         </li>
@@ -284,3 +284,4 @@ export default function AboutPage() {
         </>
     );
 }
+

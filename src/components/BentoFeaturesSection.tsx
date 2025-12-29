@@ -31,7 +31,7 @@ import Image from "next/image";
 const CCTVCard = () => (
     <Card className="flex h-full flex-col">
         <CardHeader>
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/50">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 ">
                 <Shield className="h-6 w-6 text-primary" />
             </div>
             <CardTitle>CCTV & Security</CardTitle>
@@ -136,7 +136,7 @@ const SatisfactionCard = () => (
 const HardwareCard = () => (
     <Card className="h-full">
         <CardContent className="flex h-full flex-col justify-between p-6">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100 dark:bg-orange-900/50 mb-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-100  mb-3">
                 <Cpu className="h-5 w-5 text-orange-600" />
             </div>
             <div>
@@ -207,3 +207,4 @@ export default function BentoFeaturesSection() {
         </section>
     );
 }
+

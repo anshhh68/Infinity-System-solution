@@ -152,10 +152,10 @@ ${formData.message}`;
                     {/* Contact Information Column (Left) */}
                     <div className="lg:col-span-5 flex flex-col gap-8">
                         <div className="animate-fadeIn">
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                            <h3 className="text-2xl font-bold text-slate-900  mb-2">
                                 Get in touch directly
                             </h3>
-                            <p className="text-slate-600 dark:text-slate-400">
+                            <p className="text-slate-600 ">
                                 Our team is ready to assist you with any inquiries regarding our
                                 comprehensive IT solutions.
                             </p>
@@ -165,25 +165,25 @@ ${formData.message}`;
                             {contactInfo.map((info, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-[#1a202e] border border-slate-200 dark:border-slate-700 shadow-sm hover:border-[#135bec]/50 transition-colors group animate-fadeIn"
+                                    className="flex items-start gap-4 p-4 rounded-xl bg-white  border border-slate-200  shadow-sm hover:border-[#135bec]/50 transition-colors group animate-fadeIn"
                                     style={{ animationDelay: `${index * 0.1}s` }}
                                 >
                                     <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#135bec]/10 text-[#135bec] group-hover:bg-[#135bec] group-hover:text-white transition-colors">
                                         <span className="material-symbols-outlined">{info.icon}</span>
                                     </div>
                                     <div>
-                                        <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                                        <p className="text-sm font-medium text-slate-500 ">
                                             {info.title}
                                         </p>
                                         {info.href ? (
                                             <a
                                                 href={info.href}
-                                                className="text-lg font-semibold text-slate-900 dark:text-white hover:text-[#135bec] transition-colors"
+                                                className="text-lg font-semibold text-slate-900  hover:text-[#135bec] transition-colors"
                                             >
                                                 {info.primary}
                                             </a>
                                         ) : (
-                                            <p className="text-lg font-semibold text-slate-900 dark:text-white">
+                                            <p className="text-lg font-semibold text-slate-900 ">
                                                 {info.primary}
                                             </p>
                                         )}
@@ -202,11 +202,11 @@ ${formData.message}`;
                                 <span className="material-symbols-outlined text-[#135bec]">
                                     verified_user
                                 </span>
-                                <h4 className="font-bold text-slate-900 dark:text-white">
+                                <h4 className="font-bold text-slate-900 ">
                                     Trusted by Industry Leaders
                                 </h4>
                             </div>
-                            <p className="text-sm text-slate-600 dark:text-slate-300 mb-4">
+                            <p className="text-sm text-slate-600  mb-4">
                                 Join over 500+ businesses who trust Infinity System Solution for
                                 their end-to-end technology needs.
                             </p>
@@ -218,7 +218,7 @@ ${formData.message}`;
                                 ].map((src, index) => (
                                     <div
                                         key={index}
-                                        className="w-10 h-10 rounded-full border-2 border-white dark:border-[#1a202e] relative overflow-hidden"
+                                        className="w-10 h-10 rounded-full border-2 border-white  relative overflow-hidden"
                                     >
                                         <Image
                                             src={src}
@@ -228,7 +228,7 @@ ${formData.message}`;
                                         />
                                     </div>
                                 ))}
-                                <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white dark:border-[#1a202e] bg-slate-200 dark:bg-slate-700 text-xs font-bold text-slate-600 dark:text-slate-300">
+                                <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white  bg-slate-200  text-xs font-bold text-slate-600 ">
                                     +500
                                 </div>
                             </div>
@@ -238,15 +238,15 @@ ${formData.message}`;
                     {/* Contact Form Column (Right) */}
                     <div className="lg:col-span-7">
                         <div
-                            className="bg-white dark:bg-[#1a202e] rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 p-6 lg:p-8 animate-slideInRight"
+                            className="bg-white  rounded-2xl shadow-lg border border-slate-200  p-6 lg:p-8 animate-slideInRight"
                         >
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+                            <h3 className="text-2xl font-bold text-slate-900  mb-6">
                                 Send us a message
                             </h3>
                             <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     <label className="flex flex-col gap-2">
-                                        <span className="text-sm font-medium text-slate-900 dark:text-slate-300">
+                                        <span className="text-sm font-medium text-slate-900 ">
                                             Full Name
                                         </span>
                                         <input
@@ -254,12 +254,12 @@ ${formData.message}`;
                                             name="fullName"
                                             value={formData.fullName}
                                             onChange={handleInputChange}
-                                            className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#252b36] text-slate-900 dark:text-white h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
+                                            className="w-full rounded-lg border border-slate-300  bg-slate-50  text-slate-900  h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
                                             placeholder="John Doe"
                                         />
                                     </label>
                                     <label className="flex flex-col gap-2">
-                                        <span className="text-sm font-medium text-slate-900 dark:text-slate-300">
+                                        <span className="text-sm font-medium text-slate-900 ">
                                             Company Name
                                         </span>
                                         <input
@@ -267,7 +267,7 @@ ${formData.message}`;
                                             name="companyName"
                                             value={formData.companyName}
                                             onChange={handleInputChange}
-                                            className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#252b36] text-slate-900 dark:text-white h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
+                                            className="w-full rounded-lg border border-slate-300  bg-slate-50  text-slate-900  h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
                                             placeholder="Acme Corp"
                                         />
                                     </label>
@@ -275,7 +275,7 @@ ${formData.message}`;
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     <label className="flex flex-col gap-2">
-                                        <span className="text-sm font-medium text-slate-900 dark:text-slate-300">
+                                        <span className="text-sm font-medium text-slate-900 ">
                                             Email Address
                                         </span>
                                         <input
@@ -283,12 +283,12 @@ ${formData.message}`;
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#252b36] text-slate-900 dark:text-white h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
+                                            className="w-full rounded-lg border border-slate-300  bg-slate-50  text-slate-900  h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
                                             placeholder="john@example.com"
                                         />
                                     </label>
                                     <label className="flex flex-col gap-2">
-                                        <span className="text-sm font-medium text-slate-900 dark:text-slate-300">
+                                        <span className="text-sm font-medium text-slate-900 ">
                                             Phone Number
                                         </span>
                                         <input
@@ -296,14 +296,14 @@ ${formData.message}`;
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#252b36] text-slate-900 dark:text-white h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
+                                            className="w-full rounded-lg border border-slate-300  bg-slate-50  text-slate-900  h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
                                             placeholder="(555) 123-4567"
                                         />
                                     </label>
                                 </div>
 
                                 <label className="flex flex-col gap-2">
-                                    <span className="text-sm font-medium text-slate-900 dark:text-slate-300">
+                                    <span className="text-sm font-medium text-slate-900 ">
                                         Service Interest
                                     </span>
                                     <div className="relative">
@@ -311,7 +311,7 @@ ${formData.message}`;
                                             name="service"
                                             value={formData.service}
                                             onChange={handleInputChange}
-                                            className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#252b36] text-slate-900 dark:text-white h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all appearance-none"
+                                            className="w-full rounded-lg border border-slate-300  bg-slate-50  text-slate-900  h-12 px-4 focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all appearance-none"
                                         >
                                             <option value="" disabled>
                                                 Select a service...
@@ -329,14 +329,14 @@ ${formData.message}`;
                                 </label>
 
                                 <label className="flex flex-col gap-2">
-                                    <span className="text-sm font-medium text-slate-900 dark:text-slate-300">
+                                    <span className="text-sm font-medium text-slate-900 ">
                                         Your Message
                                     </span>
                                     <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleInputChange}
-                                        className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-[#252b36] text-slate-900 dark:text-white p-4 h-32 resize-y focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
+                                        className="w-full rounded-lg border border-slate-300  bg-slate-50  text-slate-900  p-4 h-32 resize-y focus:outline-none focus:border-[#135bec] focus:ring-1 focus:ring-[#135bec] transition-all placeholder:text-slate-400"
                                         placeholder="Tell us about your project or inquiry..."
                                     />
                                 </label>
@@ -352,7 +352,7 @@ ${formData.message}`;
                                     />
                                     <label
                                         htmlFor="privacy"
-                                        className="text-xs text-slate-500 dark:text-slate-400"
+                                        className="text-xs text-slate-500 "
                                     >
                                         I agree to the processing of my personal data for the purpose of
                                         contacting me.
@@ -375,7 +375,7 @@ ${formData.message}`;
             </section>
 
             {/* Map Section */}
-            <section className="w-full h-[400px] relative bg-slate-200 dark:bg-slate-800">
+            <section className="w-full h-[400px] relative bg-slate-200 ">
                 <div
                     className="absolute inset-0 w-full h-full bg-cover bg-center grayscale opacity-80"
                     style={{
@@ -383,12 +383,12 @@ ${formData.message}`;
                     }}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-white dark:bg-[#1a202e] p-4 rounded-xl shadow-xl flex items-center gap-3 max-w-xs animate-float">
+                    <div className="bg-white  p-4 rounded-xl shadow-xl flex items-center gap-3 max-w-xs animate-float">
                         <div className="bg-[#135bec] text-white p-2 rounded-full">
                             <span className="material-symbols-outlined">location_on</span>
                         </div>
                         <div>
-                            <p className="font-bold text-sm dark:text-white">
+                            <p className="font-bold text-sm ">
                                 Infinity System Solution
                             </p>
                             <p className="text-xs text-slate-500">Vadodara, Gujarat</p>
@@ -398,25 +398,25 @@ ${formData.message}`;
             </section>
 
             {/* FAQ Section */}
-            <section className="w-full bg-white dark:bg-[#1a202e] py-16 px-4 border-t border-slate-200 dark:border-slate-700">
+            <section className="w-full bg-white  py-16 px-4 border-t border-slate-200 ">
                 <div className="max-w-[800px] mx-auto">
-                    <h2 className="text-3xl font-bold text-center mb-10 text-slate-900 dark:text-white animate-fadeIn">
+                    <h2 className="text-3xl font-bold text-center mb-10 text-slate-900  animate-fadeIn">
                         Frequently Asked Questions
                     </h2>
                     <div className="flex flex-col gap-4">
                         {faqs.map((faq, index) => (
                             <details
                                 key={index}
-                                className="group bg-slate-50 dark:bg-[#252b36] p-5 rounded-lg open:ring-1 open:ring-[#135bec]/20 transition-all cursor-pointer animate-fadeIn"
+                                className="group bg-slate-50  p-5 rounded-lg open:ring-1 open:ring-[#135bec]/20 transition-all cursor-pointer animate-fadeIn"
                                 style={{ animationDelay: `${index * 0.1}s` }}
                             >
-                                <summary className="flex justify-between items-center font-semibold text-lg list-none text-slate-900 dark:text-white">
+                                <summary className="flex justify-between items-center font-semibold text-lg list-none text-slate-900 ">
                                     {faq.question}
                                     <span className="transition group-open:rotate-180 material-symbols-outlined">
                                         expand_more
                                     </span>
                                 </summary>
-                                <p className="text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
+                                <p className="text-slate-600  mt-3 leading-relaxed">
                                     {faq.answer}
                                 </p>
                             </details>
@@ -427,3 +427,4 @@ ${formData.message}`;
         </>
     );
 }
+

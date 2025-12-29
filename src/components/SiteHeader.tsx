@@ -9,24 +9,25 @@ export function SiteHeader() {
         {
             name: "Home",
             link: "/",
-            icon: <Home className="h-4 w-4 text-neutral-500 dark:text-white" />,
+            icon: <Home className="h-4 w-4 text-neutral-500 " />,
         },
         {
             name: "Services",
             link: "/services",
-            icon: <Wrench className="h-4 w-4 text-neutral-500 dark:text-white" />,
+            icon: <Wrench className="h-4 w-4 text-neutral-500 " />,
         },
         {
             name: "About",
             link: "/about",
-            icon: <Users className="h-4 w-4 text-neutral-500 dark:text-white" />,
+            icon: <Users className="h-4 w-4 text-neutral-500 " />,
         },
         {
             name: "Contact",
             link: "/contact",
-            icon: <MessageSquare className="h-4 w-4 text-neutral-500 dark:text-white" />,
+            icon: <MessageSquare className="h-4 w-4 text-neutral-500 " />,
         },
     ];
 
     return <FloatingNav navItems={navItems} />;
 }
+

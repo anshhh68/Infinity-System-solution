@@ -61,7 +61,7 @@ export default function TrustedBrands() {
                                             src={brand.logo}
                                             alt={`${brand.name} logo`}
                                             fill
-                                            className="object-contain dark:invert"
+                                            className="object-contain "
                                             unoptimized
                                         />
                                     </div>
@@ -91,7 +91,7 @@ export default function TrustedBrands() {
                                             src={brand.logo}
                                             alt={`${brand.name} logo`}
                                             fill
-                                            className="object-contain dark:invert"
+                                            className="object-contain "
                                             unoptimized
                                         />
                                     </div>
@@ -119,3 +119,4 @@ export default function TrustedBrands() {
         </section>
     );
 }
+
